@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/porquin"
+        android:layout_width="153dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/porquin"
+ />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/porquin"
+            android:text="Cofrinho loko meu"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:id="@+id/title"
+            android:textColor="#0000FF"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Qual sua meta?"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:id="@+id/valor1"
+            />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Valor de um depósito"
+
+        app:layout_constraintTop_toBottomOf="@id/valor1"
+        android:id="@+id/deposito"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depositar"
+        app:layout_constraintTop_toBottomOf="@id/valor1"
+        app:layout_constraintLeft_toRightOf="@id/deposito"
+        android:onClick="msg"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menssage"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/deposito"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valor"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/deposito"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msgAtual"
+        app:layout_constraintTop_toBottomOf="@id/valor"
+        android:textStyle="italic"
+        android:textColor="#00a000"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

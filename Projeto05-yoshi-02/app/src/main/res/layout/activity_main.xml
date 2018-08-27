@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Número 1"
+        android:inputType="number"
+        android:id="@+id/editN1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Número 2"
+        android:inputType="number"
+        android:id="@+id/editN2"
+        app:layout_constraintTop_toBottomOf="@id/editN1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Somar"
+        android:id="@+id/botaoSomar"
+        app:layout_constraintTop_toBottomOf="@id/editN2"
+        android:onClick="calcular"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Substrair"
+        android:id="@+id/botaoSubtrair"
+        app:layout_constraintTop_toBottomOf="@id/botaoSomar"
+        android:onClick="calcular"
+        android:tag="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResultado"
+        app:layout_constraintTop_toBottomOf="@id/botaoSubtrair"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtContador"
+        app:layout_constraintTop_toBottomOf="@id/txtResultado"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

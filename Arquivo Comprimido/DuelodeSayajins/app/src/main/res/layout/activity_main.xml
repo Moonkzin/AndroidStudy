@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duelo de Sayajins"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:id="@+id/title"/>
+
+    <ImageView
+        android:id="@+id/goku"
+        android:layout_width="190dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/goku"
+        app:layout_constraintTop_toBottomOf="@id/title"
+
+        />
+
+    <ImageView
+        android:id="@+id/vegeta"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/vegeta"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/goku"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apanhar"
+        app:layout_constraintTop_toBottomOf="@id/textGoku"
+        android:onClick="gokuApanha"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textVegeta"
+        app:layout_constraintLeft_toRightOf="@id/goku"
+        android:text="Apanhar"
+        android:onClick="vegetaApanha"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textGoku"
+        app:layout_constraintTop_toBottomOf="@id/goku"
+        android:text="KI: 100"
+        android:textStyle="bold"
+        android:textColor="#900020"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVegeta"
+        app:layout_constraintTop_toBottomOf="@id/vegeta"
+        app:layout_constraintLeft_toRightOf="@id/goku"
+        android:text="KI: 100"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

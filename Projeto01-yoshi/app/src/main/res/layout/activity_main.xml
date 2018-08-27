@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texto01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="é nóis, mano"
+        android:textSize="30sp"
+        android:textColor="#4373a6"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="30dp"
+         />
+    <!-- sou um comentário kkkkkk -->
+    <TextView
+        android:id="@+id/texto02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boa noite a todos"
+        app:layout_constraintTop_toBottomOf="@id/texto01"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamo junto!"
+        app:layout_constraintLeft_toRightOf="@id/texto02"
+        app:layout_constraintTop_toBottomOf="@id/texto01"
+        />
+
+    <Button
+        android:id="@+id/botao01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/texto02"
+        android:text="Clique aqui!"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/botao01"
+        android:hint="seu telefone"
+        android:inputType="phone"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
